@@ -1,0 +1,75 @@
+<html>
+<head>
+<script type="text/javascript"  src="./js/classes/EuroExchange.js" charset="UTF-8"></script>
+<script type="text/javascript"  src="./js/classes/DollarExchange.js" charset="UTF-8"></script>
+<script type="text/javascript"  src="./js/classes/GBPExchange.js" charset="UTF-8"></script>
+<script type="text/javascript"  src="./js/calculator.js" charset="UTF-8"></script>
+<link rel="stylesheet" href="style.css">
+<script>
+
+
+</script>
+</head>
+<body>
+    <h1>CALCULADORA DE DIVISAS</h1>
+
+    <div class="padre">
+        <form action="">
+           
+       
+            
+        
+
+            <input type=text id="screen" />
+            <br>
+            <input type=button value="7" class="hola numero" onclick="addScreen('7')" />
+            <input type=button value="8" class="hola numero" onclick="addScreen('8')" />
+            <input type=button value="9"class="hola numero" onclick="addScreen('9')" />
+            <br>
+
+            <input type=button value="4" class="hola numero" onclick="addScreen('4')" />
+            <input type=button value="5" class="hola numero" onclick="addScreen('5')" />
+            <input type=button value="6" class="hola numero" onclick="addScreen('6')" />
+                        <br>
+
+            <input type=button value="1" class="hola numero" onclick="addScreen('1')" />
+            <input type=button value="2"class="hola numero"  onclick="addScreen('2')" />
+            <input type=button value="3" class="hola numero" onclick="addScreen('3')" />
+            <br>
+            <input type=button value="C" class="hola limpiar" onclick="clearScreen()" />
+            <input type=button value="0"class="hola numero" onclick="addScreen('0')" />
+            <input type=button value="="class="hola operador" onclick="calculate()" />
+            <br>
+            <select id="rate_exchange">
+                <optgroup class="r" label="Euros">
+                    <option class="r" value="1">€ --> US$</option>
+                    <option class="r" value="2">€ --> GBP</option>
+                </optgroup>
+                <optgroup class="r" label="US$">
+                    <option class="r" value="3">US$ --> €</option>
+                    <option class="r" value="4">US$ --> GBP</option>
+                </optgroup>
+                <optgroup class="r" label="GBP">
+                    <option class="r" value="5">GBP --> €</option>
+                    <option class="r" value="6">GBP --> US$</option>
+                </optgroup>
+            </select>
+           
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
